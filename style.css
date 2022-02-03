@@ -1,0 +1,225 @@
+/* body reset */
+*{
+    margin: 0;
+    padding: 0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Navigation bar logo*/
+#navbar .logo img{
+    width: 50px;
+    border-radius:30%;
+    margin: 6px 23px;
+}
+/* Navigation Bar */
+#navbar{
+    display: flex;
+    position: relative;
+    width: 100%;
+    position: fixed;
+}
+#navbar::before{
+    content:"";
+    position:absolute;
+    background: black;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+#navbar ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#navbar li  {
+   
+   list-style:none ;
+}
+#navbar li a{
+    font-family: 'Ubuntu', sans-serif;
+  text-decoration: none;
+  padding: 6px  28px;
+  font-size: 1.2rem;
+  color: white;
+}
+#navbar li a:hover{
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+}
+
+
+
+/* Home Section */
+#home{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+#home::before{
+    content:"";
+    background: url(bg2.jpg)no-repeat center center/cover;
+    position: absolute;
+    height: 74%;
+    width: 100%;
+    z-index:-1;
+    opacity: 0.4;
+}
+#home p{
+    font-size: 1.3rem;
+}
+.home-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 34px;
+}
+#btn{
+    padding: 4px 23px;
+    margin: 23px;
+    font-size: 1.3rem;
+    background-color: rgb(214, 255, 195);
+    border-radius: 12px;
+    font-family: 'Ubuntu', sans-serif;
+    width: 250px;
+}
+#btn:hover{
+   color: rgb(81, 97, 240);
+   cursor: pointer;
+   background-color: rgb(209, 246, 135);
+}
+
+/* Our Services */
+#service{
+display: flex;
+
+}
+
+#service-container{
+margin-top: 40px;
+
+}
+#service .box img{
+width: 200px;
+border-radius: 23px;
+
+}
+
+#service .box{
+    display: flex;
+    flex-direction: column;
+    align-items:center ;
+    justify-content: center;
+    border: 2px solid red;
+    width: 800px;
+    margin:-20px 23px;
+    padding: 23px 45px;
+    border-radius: 23px;
+    background-color: rgb(215, 248, 238);
+}
+/* Our clints */
+#clint-section::before{
+    content:"";
+    background: url(bg1.jpg);
+    position: absolute;
+    height: 68%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+#clint-section{
+    margin-top: 40px;
+}
+.clints{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.clints img{
+    width: 200px;
+}
+.class-itempubg{
+    height: 23px;
+}
+/* Contact section */
+#contact-section{
+  margin-top: 52px;
+    
+}
+#contact-section::before{
+    content:"";
+    background: url(./image/contact.jpg) no-repeat  center/cover;
+    height: 90%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.8;
+}
+.contact-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.contact-box input{
+font-family: 'Ubuntu', sans-serif;
+ padding: 6px 23px;
+ width: 400px;
+ text-align: center;
+ margin: 6px 23px;
+ border-radius: 8px;
+}
+.contact-box textarea{
+ 
+ border-radius: 8px;
+}
+
+.contact-box label{
+    font-size: 1.3rem;
+    font-family: 'Ubuntu', sans-serif;
+ 
+ }
+/* footer section*/
+#footer::before{
+    content:"";
+    background: black;
+    position:absolute;
+    height: 12%;
+    width: 100%;
+    z-index: -1;
+
+}
+#footer{
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footpara{
+    color: white;
+
+}
+/* Utility Classes */
+.h-primary{
+    font-family: 'Oswald', sans-serif;
+    font-size: 2.4rem;
+    padding:45px 23px;
+    text-align: center;
+}
+.paragraph{
+    font-size: 1.2rem;
+}
+.h-secondry{
+    font-size: 1.9rem;
+    padding: 23px;
+}
+p{
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 23px;
+    text-align: center;
+}

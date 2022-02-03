@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Multination Zym</title>
+    <style>
+        #navbar ul{
+            display:flex;
+        }
+        
+       #navbar::before{
+           content: "";
+           background: url(/bg2.jpg)no-repeat center center/cover;
+           position: absolute;
+           top: 0;
+           left: 0;
+           width: 100%;
+           height: 100%;
+           z-index: -1;
+           opacity: 0.4;
+
+        }
+        
+        #navbar ul li {
+            display: flex;
+            list-style: none;
+            align-items: center;
+            justify-content: center;
+        
+        }
+        #navbar ul li a{
+            text-decoration: none;
+            padding:6px 23px;
+            font-weight: bold;
+            color: white;
+        }
+        #navbar ul li a:hover{
+           background-color: white;
+           border-radius: 8px;
+           color: rgb(0, 60, 255);
+
+        }
+        .logo img{
+            width: 100px;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar" id="navbar">
+            <ul>
+                <div class="logo">
+                    <img src="/image/applelogo-removebg-preview.png" alt="">
+                </div>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+    </nav>
+</header>
+</body>
+</html>
